@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+		<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$("document").ready(function(){	
+ $("button").css("height", "30px");
+ $("button").css("width", "30px");
+  $("body").css("height", "10000");
+$("#addition").click(function(){
+	var a=$("#number1").val();
+	var b=$("#number2").val();
+       var sum= parseInt(a)+parseInt(b);
+       $("#res").html(sum);
+});
+$("#subtraction").click(function() {
+	var a=$("#number1").val();
+	var b=$("#number2").val();
+       var sum= parseInt(a)-parseInt(b);
+      $("#res").html(sum);
+});
+$("#multiplication").click(function() {
+	var a=$("#number1").val();
+	var b=$("#number2").val();
+       var sum= parseInt(a)*parseInt(b);
+     $("#res").html(sum);
+});
+$("#division").click(function() {
+   	var a=$("#number1").val(); 
+	var b=$("#number2").val();
+       var sum= parseInt(a)/parseInt(b);
+       $("#res").html(sum);
+        
+});
+
+$(".btntest").click(function(){
+	$(".ptest").fadeTo("fast",0.5);
+});
+});
+
+
+
+ 
+
+
+        
+
+</script>
+</head>
+
+<body>
+	
+		<h1>Operation between two numbers</h1>
+<label>Number one</label><input type="text" id="number1" placeholder="Enter first number">
+<br>
+<br>
+<label>Number two</label><input type="text" id="number2" placeholder="Enter second number">
+<br>
+<br>
+<button id="addition">+</button>
+<button id="subtraction">-</button>
+<button id="multiplication">*</button>
+<button id="division">/</button>
+<br>
+<br>
+<br>
+<h1>The result</h1>
+<h2 id="res"></h2>
+<button class="btntest">hide</button>
+<p class="ptest"> welcom to test</p>
+</body>
+</html>
+
